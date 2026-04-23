@@ -19,6 +19,26 @@ This project focuses on analyzing an uncleaned Nike sales dataset to extract mea
   * Forward-fill technique for missing dates
 * Removed rows where multiple critical fields were missing to maintain data reliability
 
+
+2. Standardizing Size Data
+•	Dataset contained mixed size formats (numeric + text in wrong categories)
+•	Created:
+o	Product_Type (Shoe vs Clothing)
+o	Size_Type (Numeric vs Text)
+•	Built a standardized Final_Size column:
+o	Clothing → restricted to S, M, L, XL
+o	Shoes → restricted to numeric sizes
+•	Applied default values where inconsistencies were detected
+________________________________________
+
+
+3. Date Cleaning & Formatting
+•	Resolved inconsistent formats (DD/MM/YYYY vs DD-MM-YYYY)
+•	Converted text dates into proper date format
+•	Filled missing dates using forward-fill logic
+•	Extracted Month and Year for time-based analysis
+________________________________________
+ 
 ---
 
 
